@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0404E53728AF69B400DAE7C4 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0404E53628AF69B300DAE7C4 /* SearchViewController.swift */; };
+		045B2FB528B3AB6900FBC2F8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B2FB428B3AB6900FBC2F8 /* MainViewController.swift */; };
+		045B2FB728B3AB9700FBC2F8 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B2FB628B3AB9700FBC2F8 /* FavoriteViewController.swift */; };
+		045B2FB928B3ABB800FBC2F8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045B2FB828B3ABB800FBC2F8 /* ProfileViewController.swift */; };
 		04B92F4628AED2B9007D830B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B92F4528AED2B9007D830B /* AppDelegate.swift */; };
 		04B92F4828AED2B9007D830B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B92F4728AED2B9007D830B /* SceneDelegate.swift */; };
-		04B92F4A28AED2B9007D830B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B92F4928AED2B9007D830B /* MainViewController.swift */; };
+		04B92F4A28AED2B9007D830B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B92F4928AED2B9007D830B /* TabBarController.swift */; };
 		04B92F4F28AED2BF007D830B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B92F4E28AED2BF007D830B /* Assets.xcassets */; };
 		04B92F5228AED2BF007D830B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B92F5028AED2BF007D830B /* LaunchScreen.storyboard */; };
 		D7D0C8AC2A9778816CE8CD27 /* Pods_MyLittleMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDEBF557DD3996F29655206 /* Pods_MyLittleMovie.framework */; };
@@ -19,10 +22,13 @@
 /* Begin PBXFileReference section */
 		02BC6831D9B22E7821E9106F /* Pods-MyLittleMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLittleMovie.debug.xcconfig"; path = "Target Support Files/Pods-MyLittleMovie/Pods-MyLittleMovie.debug.xcconfig"; sourceTree = "<group>"; };
 		0404E53628AF69B300DAE7C4 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		045B2FB428B3AB6900FBC2F8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		045B2FB628B3AB9700FBC2F8 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		045B2FB828B3ABB800FBC2F8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		04B92F4228AED2B9007D830B /* MyLittleMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLittleMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B92F4528AED2B9007D830B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B92F4728AED2B9007D830B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04B92F4928AED2B9007D830B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		04B92F4928AED2B9007D830B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		04B92F4E28AED2BF007D830B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04B92F5128AED2BF007D830B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04B92F5328AED2BF007D830B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,8 +51,8 @@
 		0404E53828AF6A3900DAE7C4 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				04B92F4928AED2B9007D830B /* MainViewController.swift */,
-				0404E53928AF6A4200DAE7C4 /* SearchView */,
+				04B92F4928AED2B9007D830B /* TabBarController.swift */,
+				045B2FBD28B3ABF500FBC2F8 /* Subcomponent */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -57,6 +63,41 @@
 				0404E53628AF69B300DAE7C4 /* SearchViewController.swift */,
 			);
 			path = SearchView;
+			sourceTree = "<group>";
+		};
+		045B2FBA28B3ABD300FBC2F8 /* MainVIew */ = {
+			isa = PBXGroup;
+			children = (
+				045B2FB428B3AB6900FBC2F8 /* MainViewController.swift */,
+			);
+			path = MainVIew;
+			sourceTree = "<group>";
+		};
+		045B2FBB28B3ABDB00FBC2F8 /* FavoriteView */ = {
+			isa = PBXGroup;
+			children = (
+				045B2FB628B3AB9700FBC2F8 /* FavoriteViewController.swift */,
+			);
+			path = FavoriteView;
+			sourceTree = "<group>";
+		};
+		045B2FBC28B3ABE300FBC2F8 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				045B2FB828B3ABB800FBC2F8 /* ProfileViewController.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		045B2FBD28B3ABF500FBC2F8 /* Subcomponent */ = {
+			isa = PBXGroup;
+			children = (
+				045B2FBA28B3ABD300FBC2F8 /* MainVIew */,
+				0404E53928AF6A4200DAE7C4 /* SearchView */,
+				045B2FBB28B3ABDB00FBC2F8 /* FavoriteView */,
+				045B2FBC28B3ABE300FBC2F8 /* ProfileView */,
+			);
+			path = Subcomponent;
 			sourceTree = "<group>";
 		};
 		04B92F3928AED2B9007D830B = {
@@ -221,10 +262,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B92F4A28AED2B9007D830B /* MainViewController.swift in Sources */,
+				04B92F4A28AED2B9007D830B /* TabBarController.swift in Sources */,
 				04B92F4628AED2B9007D830B /* AppDelegate.swift in Sources */,
 				0404E53728AF69B400DAE7C4 /* SearchViewController.swift in Sources */,
 				04B92F4828AED2B9007D830B /* SceneDelegate.swift in Sources */,
+				045B2FB928B3ABB800FBC2F8 /* ProfileViewController.swift in Sources */,
+				045B2FB728B3AB9700FBC2F8 /* FavoriteViewController.swift in Sources */,
+				045B2FB528B3AB6900FBC2F8 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
