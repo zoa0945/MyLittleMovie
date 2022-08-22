@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TabBarController.swift
 //  MyLittleMovie
 //
 //  Created by Mac on 2022/08/19.
@@ -7,7 +7,18 @@
 
 import UIKit
 
-class MainViewController: UITabBarController {
+class TabBarController: UITabBarController {
+    
+    private let mainViewController: UIViewController = {
+        let vc = UIViewController()
+        let tabBarItem = UITabBarItem(
+            title: "영화",
+            image: UIImage(systemName: "film.circle"),
+            selectedImage: UIImage(systemName: "film.circle.fill"))
+        vc.tabBarItem = tabBarItem
+        
+        return vc
+    }()
     
     private let searchViewController: UIViewController = {
         let vc = SearchViewController()
@@ -46,7 +57,7 @@ class MainViewController: UITabBarController {
         super.viewDidLoad()
         
         view.backgroundColor = .systemBackground
-        viewControllers = [searchViewController, favoriteViewController, profileViewController]
+        viewControllers = [mainViewController, searchViewController, favoriteViewController, profileViewController]
     }
 }
 
