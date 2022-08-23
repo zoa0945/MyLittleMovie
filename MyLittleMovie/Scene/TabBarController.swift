@@ -10,7 +10,7 @@ import UIKit
 class TabBarController: UITabBarController {
     
     private let mainViewController: UIViewController = {
-        let vc = UIViewController()
+        let vc = UINavigationController(rootViewController: MainViewController())
         let tabBarItem = UITabBarItem(
             title: "영화",
             image: UIImage(systemName: "film.circle"),
@@ -56,7 +56,6 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemBackground
         viewControllers = [mainViewController, searchViewController, favoriteViewController, profileViewController]
     }
 }
