@@ -10,6 +10,15 @@ import SnapKit
 
 class MovieSectionView: UIView {
     
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 24, weight: .bold)
+        label.textColor = .label
+        label.text = "상영중인 영화"
+        
+        return label
+    }()
+    
     lazy var movieCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -54,10 +63,19 @@ extension MovieSectionView: UICollectionViewDataSource, UICollectionViewDelegate
 
 extension MovieSectionView {
     private func layout() {
-        addSubview(movieCollectionView)
+        [
+            titleLabel,
+            movieCollectionView
+        ].forEach {
+            addSubview($0)
+        }
+        
+        titleLabel.snp.makeConstraints {
+            $0.top.leading.equalToSuperview().inset(16)
+        }
         
         movieCollectionView.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(16)
+            $0.top.equalTo(titleLabel.snp.bottom).offset(8)
             $0.leading.trailing.equalToSuperview().inset(8)
             $0.bottom.equalToSuperview()
             $0.height.equalTo(MovieCell.height)
