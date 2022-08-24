@@ -10,6 +10,15 @@ import SnapKit
 
 class LatestSearchView: UIView {
     
+    private let titleLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 24, weight: .bold)
+        label.textColor = .label
+        label.text = "최근 검색한 영화"
+        
+        return label
+    }()
+    
     lazy var searchCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -57,14 +66,19 @@ extension LatestSearchView: UICollectionViewDataSource, UICollectionViewDelegate
 extension LatestSearchView {
     private func layout() {
         [
+            titleLabel,
             searchCollectionView,
             spacingView
         ].forEach {
             addSubview($0)
         }
         
+        titleLabel.snp.makeConstraints {
+            $0.top.leading.equalToSuperview().inset(16)
+        }
+        
         searchCollectionView.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(16)
+            $0.top.equalTo(titleLabel.snp.bottom).offset(8)
             $0.leading.trailing.equalToSuperview().inset(8)
             $0.height.equalTo(MovieCell.height)
         }
