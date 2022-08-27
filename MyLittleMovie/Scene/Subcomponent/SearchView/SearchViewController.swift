@@ -46,6 +46,11 @@ extension SearchViewController: UICollectionViewDelegateFlowLayout, UICollection
         let width = collectionView.frame.width
         return CGSize(width: width, height: 144)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = MovieInfoView()
+        self.present(vc, animated: true)
+    }
 }
 
 extension SearchViewController {
@@ -64,7 +69,8 @@ extension SearchViewController {
         
         movieList.snp.makeConstraints {
             $0.top.equalTo(searchBar.snp.bottom)
-            $0.leading.trailing.bottom.equalToSuperview()
+            $0.leading.trailing.equalToSuperview()
+            $0.bottom.equalTo(view.safeAreaLayoutGuide)
         }
     }
 }
