@@ -66,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				04B92F4928AED2B9007D830B /* TabBarController.swift */,
-				045B2FBD28B3ABF500FBC2F8 /* Subcomponent */,
+				045B2FBD28B3ABF500FBC2F8 /* Subcomponents */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -75,9 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				0404E53628AF69B300DAE7C4 /* SearchViewController.swift */,
-				045B2FCE28B6105500FBC2F8 /* MovieListCell.swift */,
-				045B2FCA28B60BF000FBC2F8 /* SearchBar.swift */,
-				045B2FD028BA41C100FBC2F8 /* MovieInfoView.swift */,
+				045B2FD328BFA04300FBC2F8 /* Subcomponents */,
 			);
 			path = SearchView;
 			sourceTree = "<group>";
@@ -86,10 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				045B2FB428B3AB6900FBC2F8 /* MainViewController.swift */,
-				045B2FC228B4D67300FBC2F8 /* TitleSectionView.swift */,
-				045B2FC028B4D5DE00FBC2F8 /* MovieSectionView.swift */,
-				045B2FC428B4DB3800FBC2F8 /* LatestSearchView.swift */,
-				045B2FBE28B4C86C00FBC2F8 /* MovieCell.swift */,
+				045B2FD228BFA02300FBC2F8 /* Subcomponents */,
 			);
 			path = MainVIew;
 			sourceTree = "<group>";
@@ -110,7 +105,7 @@
 			path = ProfileView;
 			sourceTree = "<group>";
 		};
-		045B2FBD28B3ABF500FBC2F8 /* Subcomponent */ = {
+		045B2FBD28B3ABF500FBC2F8 /* Subcomponents */ = {
 			isa = PBXGroup;
 			children = (
 				045B2FBA28B3ABD300FBC2F8 /* MainVIew */,
@@ -118,7 +113,28 @@
 				045B2FBB28B3ABDB00FBC2F8 /* FavoriteView */,
 				045B2FBC28B3ABE300FBC2F8 /* ProfileView */,
 			);
-			path = Subcomponent;
+			path = Subcomponents;
+			sourceTree = "<group>";
+		};
+		045B2FD228BFA02300FBC2F8 /* Subcomponents */ = {
+			isa = PBXGroup;
+			children = (
+				045B2FC228B4D67300FBC2F8 /* TitleSectionView.swift */,
+				045B2FC028B4D5DE00FBC2F8 /* MovieSectionView.swift */,
+				045B2FC428B4DB3800FBC2F8 /* LatestSearchView.swift */,
+				045B2FBE28B4C86C00FBC2F8 /* MovieCell.swift */,
+			);
+			path = Subcomponents;
+			sourceTree = "<group>";
+		};
+		045B2FD328BFA04300FBC2F8 /* Subcomponents */ = {
+			isa = PBXGroup;
+			children = (
+				045B2FCA28B60BF000FBC2F8 /* SearchBar.swift */,
+				045B2FCE28B6105500FBC2F8 /* MovieListCell.swift */,
+				045B2FD028BA41C100FBC2F8 /* MovieInfoView.swift */,
+			);
+			path = Subcomponents;
 			sourceTree = "<group>";
 		};
 		04B92F3928AED2B9007D830B = {

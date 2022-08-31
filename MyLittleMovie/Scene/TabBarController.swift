@@ -32,7 +32,7 @@ class TabBarController: UITabBarController {
     }()
     
     private let favoriteViewController: UIViewController = {
-        let vc = UIViewController()
+        let vc = UINavigationController(rootViewController: FavoriteViewController())
         let tabBarItem = UITabBarItem(
             title: "즐겨찾기",
             image: UIImage(systemName: "star"),
