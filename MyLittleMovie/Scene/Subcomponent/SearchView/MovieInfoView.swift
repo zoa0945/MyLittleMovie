@@ -14,6 +14,7 @@ class MovieInfoView: UIViewController {
         let label = UILabel()
         label.font = .systemFont(ofSize: 32, weight: .bold)
         label.textColor = .label
+        label.text = "title"
         
         return label
     }()
@@ -31,6 +32,7 @@ class MovieInfoView: UIViewController {
         let label = UILabel()
         label.font = .systemFont(ofSize: 16, weight: .semibold)
         label.textColor = .label
+        label.text = "director"
         
         return label
     }()
@@ -39,6 +41,7 @@ class MovieInfoView: UIViewController {
         let label = UILabel()
         label.font = .systemFont(ofSize: 16, weight: .semibold)
         label.textColor = .label
+        label.text = "actor"
         
         return label
     }()
@@ -47,6 +50,7 @@ class MovieInfoView: UIViewController {
         let label = UILabel()
         label.font = .systemFont(ofSize: 14)
         label.textColor = .label
+        label.text = "genre"
         
         return label
     }()
@@ -55,14 +59,7 @@ class MovieInfoView: UIViewController {
         let label = UILabel()
         label.font = .systemFont(ofSize: 14)
         label.textColor = .label
-        
-        return label
-    }()
-    
-    private let starLabel: UILabel = {
-        let label = UILabel()
-        label.font = .systemFont(ofSize: 14)
-        label.textColor = .label
+        label.text = "running time"
         
         return label
     }()
@@ -72,6 +69,7 @@ class MovieInfoView: UIViewController {
         label.font = .systemFont(ofSize: 14)
         label.textColor = .label
         label.numberOfLines = 3
+        label.text = "description"
         
         return label
     }()
@@ -86,6 +84,51 @@ class MovieInfoView: UIViewController {
 
 extension MovieInfoView {
     private func layout() {
+        [
+            titleLabel,
+            thumbnail,
+            directorLabel,
+            actorLabel,
+            genreLabel,
+            timeLabel,
+            descriptionLabel
+        ].forEach {
+            view.addSubview($0)
+        }
         
+        titleLabel.snp.makeConstraints {
+            $0.top.leading.equalToSuperview().inset(24)
+        }
+        
+        thumbnail.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(titleLabel.snp.bottom).offset(16)
+            $0.width.height.equalTo(UIScreen.main.bounds.width - 24)
+        }
+        
+        directorLabel.snp.makeConstraints {
+            $0.top.equalTo(thumbnail.snp.bottom).offset(12)
+            $0.leading.equalToSuperview().inset(16)
+        }
+        
+        actorLabel.snp.makeConstraints {
+            $0.top.equalTo(directorLabel.snp.bottom).offset(6)
+            $0.leading.equalTo(directorLabel)
+        }
+        
+        genreLabel.snp.makeConstraints {
+            $0.top.equalTo(actorLabel.snp.bottom).offset(6)
+            $0.leading.equalTo(directorLabel)
+        }
+        
+        timeLabel.snp.makeConstraints {
+            $0.top.equalTo(genreLabel)
+            $0.leading.equalTo(genreLabel.snp.trailing).offset(6)
+        }
+        
+        descriptionLabel.snp.makeConstraints {
+            $0.top.equalTo(genreLabel.snp.bottom).offset(6)
+            $0.leading.trailing.equalToSuperview().inset(16)
+        }
     }
 }
