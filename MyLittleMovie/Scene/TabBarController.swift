@@ -43,7 +43,7 @@ class TabBarController: UITabBarController {
     }()
     
     private let profileViewController: UIViewController = {
-        let vc = UIViewController()
+        let vc = UINavigationController(rootViewController: ProfileViewController())
         let tabBarItem = UITabBarItem(
             title: "프로필",
             image: UIImage(systemName: "person.crop.circle"),

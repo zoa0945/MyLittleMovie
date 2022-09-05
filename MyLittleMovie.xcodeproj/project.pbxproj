@@ -23,6 +23,7 @@
 		04B92F4A28AED2B9007D830B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B92F4928AED2B9007D830B /* TabBarController.swift */; };
 		04B92F4F28AED2BF007D830B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B92F4E28AED2BF007D830B /* Assets.xcassets */; };
 		04B92F5228AED2BF007D830B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B92F5028AED2BF007D830B /* LaunchScreen.storyboard */; };
+		04F8223828C6328E00E93BB3 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8223728C6328E00E93BB3 /* ProfileCell.swift */; };
 		D7D0C8AC2A9778816CE8CD27 /* Pods_MyLittleMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDEBF557DD3996F29655206 /* Pods_MyLittleMovie.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		04B92F4E28AED2BF007D830B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04B92F5128AED2BF007D830B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04B92F5328AED2BF007D830B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04F8223728C6328E00E93BB3 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		4896B3CE5C780F794B8F4C5B /* Pods-MyLittleMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLittleMovie.release.xcconfig"; path = "Target Support Files/Pods-MyLittleMovie/Pods-MyLittleMovie.release.xcconfig"; sourceTree = "<group>"; };
 		BEDEBF557DD3996F29655206 /* Pods_MyLittleMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyLittleMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				045B2FB828B3ABB800FBC2F8 /* ProfileViewController.swift */,
+				04F8223728C6328E00E93BB3 /* ProfileCell.swift */,
 			);
 			path = ProfileView;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				04B92F4828AED2B9007D830B /* SceneDelegate.swift in Sources */,
 				045B2FCB28B60BF000FBC2F8 /* SearchBar.swift in Sources */,
 				045B2FB928B3ABB800FBC2F8 /* ProfileViewController.swift in Sources */,
+				04F8223828C6328E00E93BB3 /* ProfileCell.swift in Sources */,
 				045B2FC528B4DB3800FBC2F8 /* LatestSearchView.swift in Sources */,
 				045B2FB728B3AB9700FBC2F8 /* FavoriteViewController.swift in Sources */,
 				045B2FC128B4D5DE00FBC2F8 /* MovieSectionView.swift in Sources */,
