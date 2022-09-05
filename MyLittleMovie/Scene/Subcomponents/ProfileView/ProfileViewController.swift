@@ -10,5 +10,11 @@ import UIKit
 class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = .systemBackground
+        
+        navigationItem.title = "User Name"
+        navigationItem.largeTitleDisplayMode = .always
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
