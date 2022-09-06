@@ -12,6 +12,8 @@ class SearchViewController: UIViewController {
     
     private let searchBar = SearchBar()
     
+    private let filterView = FilterView()
+    
     lazy var movieList: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         
@@ -57,6 +59,7 @@ extension SearchViewController {
     private func layout() {
         [
             searchBar,
+            filterView,
             movieList
         ].forEach {
             view.addSubview($0)
@@ -67,8 +70,14 @@ extension SearchViewController {
             $0.leading.trailing.equalToSuperview()
         }
         
-        movieList.snp.makeConstraints {
+        filterView.snp.makeConstraints {
             $0.top.equalTo(searchBar.snp.bottom)
+            $0.leading.trailing.equalToSuperview()
+            $0.height.equalTo(40)
+        }
+        
+        movieList.snp.makeConstraints {
+            $0.top.equalTo(filterView.snp.bottom)
             $0.leading.trailing.equalToSuperview()
             $0.bottom.equalTo(view.safeAreaLayoutGuide)
         }
