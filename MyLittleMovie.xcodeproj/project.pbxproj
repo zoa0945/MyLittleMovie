@@ -25,6 +25,7 @@
 		04B92F5228AED2BF007D830B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B92F5028AED2BF007D830B /* LaunchScreen.storyboard */; };
 		04F8223828C6328E00E93BB3 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8223728C6328E00E93BB3 /* ProfileCell.swift */; };
 		04F8223B28C78C1B00E93BB3 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8223A28C78C1B00E93BB3 /* FilterView.swift */; };
+		8E13328628E43BC700061C85 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E13328528E43BC700061C85 /* ReviewTableViewCell.swift */; };
 		D7D0C8AC2A9778816CE8CD27 /* Pods_MyLittleMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDEBF557DD3996F29655206 /* Pods_MyLittleMovie.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		04F8223728C6328E00E93BB3 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		04F8223A28C78C1B00E93BB3 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		4896B3CE5C780F794B8F4C5B /* Pods-MyLittleMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLittleMovie.release.xcconfig"; path = "Target Support Files/Pods-MyLittleMovie/Pods-MyLittleMovie.release.xcconfig"; sourceTree = "<group>"; };
+		8E13328528E43BC700061C85 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		BEDEBF557DD3996F29655206 /* Pods_MyLittleMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyLittleMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				045B2FD028BA41C100FBC2F8 /* MovieInfoView.swift */,
+				8E13328528E43BC700061C85 /* ReviewTableViewCell.swift */,
 			);
 			path = InfoView;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				045B2FB728B3AB9700FBC2F8 /* FavoriteViewController.swift in Sources */,
 				04F8223B28C78C1B00E93BB3 /* FilterView.swift in Sources */,
 				045B2FC128B4D5DE00FBC2F8 /* MovieSectionView.swift in Sources */,
+				8E13328628E43BC700061C85 /* ReviewTableViewCell.swift in Sources */,
 				045B2FB528B3AB6900FBC2F8 /* MainViewController.swift in Sources */,
 				045B2FC328B4D67300FBC2F8 /* TitleSectionView.swift in Sources */,
 			);

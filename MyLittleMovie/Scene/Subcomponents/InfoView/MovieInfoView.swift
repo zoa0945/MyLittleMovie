@@ -74,11 +74,39 @@ class MovieInfoView: UIViewController {
         return label
     }()
     
+    lazy var reviewTableView: UITableView = {
+        let tableView = UITableView()
+        
+        tableView.backgroundColor = .systemBackground
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(ReviewTableViewCell.self, forCellReuseIdentifier: "ReviewTableViewCell")
+        
+        tableView.rowHeight = 102
+        
+        return tableView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .systemBackground
         layout()
+    }
+}
+
+extension MovieInfoView: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ReviewTableViewCell", for: indexPath) as? ReviewTableViewCell else { return UITableViewCell() }
+        
+        cell.setup()
+        
+        return cell
     }
 }
 
@@ -91,7 +119,8 @@ extension MovieInfoView {
             actorLabel,
             genreLabel,
             timeLabel,
-            descriptionLabel
+            descriptionLabel,
+            reviewTableView
         ].forEach {
             view.addSubview($0)
         }
@@ -129,6 +158,11 @@ extension MovieInfoView {
         descriptionLabel.snp.makeConstraints {
             $0.top.equalTo(genreLabel.snp.bottom).offset(6)
             $0.leading.trailing.equalToSuperview().inset(16)
+        }
+        
+        reviewTableView.snp.makeConstraints {
+            $0.top.equalTo(descriptionLabel.snp.bottom).offset(6)
+            $0.leading.trailing.bottom.equalToSuperview()
         }
     }
 }
