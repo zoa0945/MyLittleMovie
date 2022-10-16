@@ -16,7 +16,7 @@
 		<key>Pods-MyLittleMovie.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>4</integer>
 		</dict>
 		<key>RxCocoa.xcscheme_^#shared#^_</key>
 		<dict>
@@ -35,7 +35,11 @@
 		<key>RxSwift.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>6</integer>
+=======
+			<integer>5</integer>
+>>>>>>> c3e3fa4 (refect: conflict error)
 		</dict>
 		<key>SnapKit.xcscheme_^#shared#^_</key>
 		<dict>
