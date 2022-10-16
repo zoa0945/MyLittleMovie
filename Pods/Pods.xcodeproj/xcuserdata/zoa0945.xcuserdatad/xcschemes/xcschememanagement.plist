@@ -7,7 +7,11 @@
 		<key>Kingfisher.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>2</integer>
+=======
+			<integer>1</integer>
+>>>>>>> eff1177 (chare: change UserInterfaceState and xcschememanagment.plist)
 		</dict>
 		<key>Pods-MyLittleMovie.xcscheme_^#shared#^_</key>
 		<dict>
@@ -22,7 +26,11 @@
 		<key>RxRelay.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>3</integer>
+=======
+			<integer>2</integer>
+>>>>>>> eff1177 (chare: change UserInterfaceState and xcschememanagment.plist)
 		</dict>
 		<key>RxSwift.xcscheme_^#shared#^_</key>
 		<dict>
