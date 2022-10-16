@@ -7,7 +7,19 @@
 		<key>Kingfisher.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>1</integer>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+			<integer>2</integer>
+=======
+			<integer>1</integer>
+>>>>>>> eff1177 (chare: change UserInterfaceState and xcschememanagment.plist)
+=======
+			<integer>1</integer>
+>>>>>>> 3d2ba66 (chore: change xcschememanagement.plist)
+>>>>>>> develop
 		</dict>
 		<key>Pods-MyLittleMovie.xcscheme_^#shared#^_</key>
 		<dict>
@@ -22,12 +34,36 @@
 		<key>RxRelay.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>2</integer>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+			<integer>3</integer>
+=======
+			<integer>2</integer>
+>>>>>>> eff1177 (chare: change UserInterfaceState and xcschememanagment.plist)
+=======
+			<integer>2</integer>
+>>>>>>> 3d2ba66 (chore: change xcschememanagement.plist)
+>>>>>>> develop
 		</dict>
 		<key>RxSwift.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>5</integer>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+			<integer>6</integer>
+=======
+			<integer>5</integer>
+>>>>>>> c3e3fa4 (refect: conflict error)
+=======
+			<integer>5</integer>
+>>>>>>> 3d2ba66 (chore: change xcschememanagement.plist)
+>>>>>>> develop
 		</dict>
 		<key>SnapKit.xcscheme_^#shared#^_</key>
 		<dict>
