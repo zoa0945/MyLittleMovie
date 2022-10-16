@@ -37,6 +37,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        TMDBMovieAPI().searchMovie("Avengers")
         navigationItem.title = "오늘의 영화"
         navigationItem.largeTitleDisplayMode = .always
         navigationController?.navigationBar.prefersLargeTitles = true
