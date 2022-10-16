@@ -26,6 +26,8 @@
 		04F8223828C6328E00E93BB3 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8223728C6328E00E93BB3 /* ProfileCell.swift */; };
 		04F8223B28C78C1B00E93BB3 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F8223A28C78C1B00E93BB3 /* FilterView.swift */; };
 		8E13328628E43BC700061C85 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E13328528E43BC700061C85 /* ReviewTableViewCell.swift */; };
+		8E13328A28E8A08C00061C85 /* TMDBMovieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E13328928E8A08C00061C85 /* TMDBMovieAPI.swift */; };
+		8E13328C28E8A19500061C85 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E13328B28E8A19500061C85 /* Movie.swift */; };
 		D7D0C8AC2A9778816CE8CD27 /* Pods_MyLittleMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEDEBF557DD3996F29655206 /* Pods_MyLittleMovie.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		04F8223A28C78C1B00E93BB3 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		4896B3CE5C780F794B8F4C5B /* Pods-MyLittleMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLittleMovie.release.xcconfig"; path = "Target Support Files/Pods-MyLittleMovie/Pods-MyLittleMovie.release.xcconfig"; sourceTree = "<group>"; };
 		8E13328528E43BC700061C85 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		8E13328928E8A08C00061C85 /* TMDBMovieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBMovieAPI.swift; sourceTree = "<group>"; };
+		8E13328B28E8A19500061C85 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		BEDEBF557DD3996F29655206 /* Pods_MyLittleMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyLittleMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -168,6 +172,8 @@
 			children = (
 				04B92F4528AED2B9007D830B /* AppDelegate.swift */,
 				04B92F4728AED2B9007D830B /* SceneDelegate.swift */,
+				8E13328B28E8A19500061C85 /* Movie.swift */,
+				8E13328928E8A08C00061C85 /* TMDBMovieAPI.swift */,
 				0404E53828AF6A3900DAE7C4 /* Scene */,
 				04B92F4E28AED2BF007D830B /* Assets.xcassets */,
 				04B92F5028AED2BF007D830B /* LaunchScreen.storyboard */,
@@ -316,12 +322,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E13328C28E8A19500061C85 /* Movie.swift in Sources */,
 				045B2FCF28B6105500FBC2F8 /* MovieListCell.swift in Sources */,
 				04B92F4A28AED2B9007D830B /* TabBarController.swift in Sources */,
 				04B92F4628AED2B9007D830B /* AppDelegate.swift in Sources */,
 				045B2FBF28B4C86C00FBC2F8 /* MovieCell.swift in Sources */,
 				0404E53728AF69B400DAE7C4 /* SearchViewController.swift in Sources */,
 				045B2FD128BA41C100FBC2F8 /* MovieInfoView.swift in Sources */,
+				8E13328A28E8A08C00061C85 /* TMDBMovieAPI.swift in Sources */,
 				04B92F4828AED2B9007D830B /* SceneDelegate.swift in Sources */,
 				045B2FCB28B60BF000FBC2F8 /* SearchBar.swift in Sources */,
 				045B2FB928B3ABB800FBC2F8 /* ProfileViewController.swift in Sources */,
